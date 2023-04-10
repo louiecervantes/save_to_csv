@@ -16,8 +16,7 @@ def app():
         'City': ['New York', 'London', 'Paris', 'Tokyo']
     }
     df = pd.DataFrame(data)
-    # Prompt the user to enter a filename
-    filename = st.text_input('Enter a filename:', 'data.csv')
+
     # Create a button to save data to CSV file
     if st.button('Save data to CSV file'):
         # Save the dataframe to a CSV file
