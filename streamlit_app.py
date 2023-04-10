@@ -21,10 +21,9 @@ def app():
     # Create a button to save data to CSV file
     if st.button('Save data to CSV file'):
         # Save the dataframe to a CSV file
-        df.to_csv(filename, index=False)
-         csv = df.to_csv(index=False)
+        csv = df.to_csv(filename, index=False)
         b64 = base64.b64encode(csv.encode()).decode()  # Convert to base64
-        href = f'<a href="data:file/csv;base64,{b64}" download="data.csv">Download CSV file</a>'
+        href = f'<a href="data:file/csv;base64,{b64}" download="' + fiename + '">Download CSV file</a>'
         st.markdown(href, unsafe_allow_html=True)       
         st.success(f'Data saved to {filename}!')         
              
