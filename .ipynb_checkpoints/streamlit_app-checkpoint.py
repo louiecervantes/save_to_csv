@@ -4,7 +4,7 @@ import altair as alt
 import nltk
 import numpy as np
 import pandas as pd
-
+import base64
 
 # Define the Streamlit app
 def app():

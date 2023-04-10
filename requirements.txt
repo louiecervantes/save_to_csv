@@ -4,3 +4,4 @@ nltk
 numpy
 scikit-learn
 pandas
+base64
